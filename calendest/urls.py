@@ -17,6 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from calendar_app import views
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("calendar/", views.home, name="home"),
 ]
